@@ -10,10 +10,11 @@ So, right now, this is not a proper plugin, its just a template file and a scss 
 
 In the meantime, here's what's planned:
 
-- Convert from ACF to CMB2, so all fields can be embedded in the plugin
+- Include ACF in plugin so fields are added in the php.
 - Clean up css a bit, use better naming conventions
-- Create an options page for editing the CV.  Maybe just make this a custom post type.
+- Create an options page for editing the CV.  Just make this a custom post type.
 - Create a shortcode to embed the cv anywhere on the site.
+- Maybe make a page-template for overriding site headers and such.
 - Edit responsive css so it works on mobile
 - add better styling for links, so its clear they're clickable.
 - add page load-in effects (type-in, or fade in-up blocks)
@@ -21,3 +22,10 @@ In the meantime, here's what's planned:
 - Add in arrows for the expandable sections, and make them fold down the code
 - Eventually, allow for adding other common sublime themes.
 - Test, test, test.  Make sure styles aren't overridden by user themes.
+
+## Changelog
+Well, sort of, here's a place for me to add notes on changes made.
+### 27.10.15
+Tried adding CMB2, but found that nested repeaters do not function well, which would stop easy development of the portfolio items.  So, we'll stick with ACF, and use the JSON to make it easier to edit.
+### 26.10.15
+Getting started on active devlopment.  The wordpress page template works, but the whole thing needs to be recreated as a plugin.  The plan is for a custom post type, with its custom fields, and a shortcode to embed it wherever.  Maybe also a page template, if plugins in wordpress can add those.
