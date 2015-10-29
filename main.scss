@@ -61,7 +61,7 @@ a {
 	.line{
 		position: relative;
 		&:before {
-		content: "11";
+		content: attr(data-content);
 		position: absolute;
 		left: -3rem;
 		color: $light-grey;
