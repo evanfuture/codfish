@@ -16,5 +16,5 @@ Domain Path: /lang/
 require_once dirname( __FILE__ ) . '/vendor/extended-cpts/extended-cpts.php';
 register_extended_post_type( 'codfish-resume' );
 
-//require_once dirname( __FILE__ ) . 'lib/shortcode.php';
+require_once dirname( __FILE__ ) . '/lib/pagetemplate.php';
 ?>
